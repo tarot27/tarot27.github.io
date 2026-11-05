@@ -10,7 +10,7 @@
 <body>
 <header class="site-header">
   <div class="wrap nav">
-    <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark">T<span>27</span></span> TAROT <small>SUMMER SCHOOL</small></a>
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="TAROT 2027 Summer School — Home"><img class="brand-logo" src="{{ '/assets/tarot2027-helsinki-logo.png' | relative_url }}" alt="TAROT Summer School 2027 — Helsinki" width="290" height="55"></a>
     <button class="menu-toggle" aria-label="Toggle navigation" aria-controls="nav" aria-expanded="false">☰</button>
     <nav id="nav" aria-label="Main navigation">
 <a href="{{ '/about/' | relative_url }}" {% if page.url == "/about/" %}aria-current="page"{% endif %}>About</a>
@@ -35,10 +35,11 @@
     <div class="hero-meta"><span>📍 Aalto University · Espoo, Finland</span><span>📅 7–10 June 2027</span></div>
     <a class="btn" href="{{ '/programme/' | relative_url }}">Explore the programme <span aria-hidden="true">↗</span></a>
   </div><div class="grid-art" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div></div></section>
+{% elsif page.custom_hero %}
 {% else %}
   <section class="page-hero"><div class="wrap"><p class="eyebrow">TAROT 2027 · 7–10 JUNE · ESPOO</p><h1>{{ page.title | escape }}</h1>{% if page.subtitle %}<p>{{ page.subtitle | escape }}</p>{% endif %}</div></section>
 {% endif %}
-<section class="section {% if page.soft %}soft{% endif %}"><div class="wrap prose">
+<section class="section {% if page.soft %}soft{% endif %} {% if page.custom_hero %}past-editions-page{% endif %}"><div class="wrap prose">
 {{ content }}
 </div></section>
 </main>
