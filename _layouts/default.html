@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ site.description | escape }}">
+  <title>{% if page.title %}{{ page.title | escape }} · {% endif %}{{ site.title | escape }}</title>
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark">T<span>27</span></span> TAROT <small>SUMMER SCHOOL</small></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-controls="nav" aria-expanded="false">☰</button>
+    <nav id="nav" aria-label="Main navigation">
+<a href="{{ '/about/' | relative_url }}" {% if page.url == "/about/" %}aria-current="page"{% endif %}>About</a>
+<a href="{{ '/programme/' | relative_url }}" {% if page.url == "/programme/" %}aria-current="page"{% endif %}>Programme</a>
+<a href="{{ '/lecturers/' | relative_url }}" {% if page.url == "/lecturers/" %}aria-current="page"{% endif %}>Lecturers</a>
+<a href="{{ '/organisers/' | relative_url }}" {% if page.url == "/organisers/" %}aria-current="page"{% endif %}>Organisers</a>
+<a href="{{ '/venue/' | relative_url }}" {% if page.url == "/venue/" %}aria-current="page"{% endif %}>Venue</a>
+<a href="{{ '/accommodation/' | relative_url }}" {% if page.url == "/accommodation/" %}aria-current="page"{% endif %}>Accommodation</a>
+<a href="{{ '/social-events/' | relative_url }}" {% if page.url == "/social-events/" %}aria-current="page"{% endif %}>Social events</a>
+<a href="{{ '/sponsors/' | relative_url }}" {% if page.url == "/sponsors/" %}aria-current="page"{% endif %}>Sponsors</a>
+<a href="{{ '/past-editions/' | relative_url }}" {% if page.url == "/past-editions/" %}aria-current="page"{% endif %}>Past editions</a>
+    </nav>
+  </div>
+</header>
+<main>
+{% if page.home %}
+  <section class="hero" id="home"><div class="wrap hero-inner">
+    <div class="eyebrow"><span class="dot"></span> 7–10 JUNE 2027 · ESPOO, FINLAND</div>
+    <p class="edition">Training And Research On Testing</p>
+    <h1>TAROT Summer<br><em>School 2027</em></h1>
+    <p class="lead">Four days of research, learning and discussion about software testing, verification and validation at Aalto University.</p>
+    <div class="hero-meta"><span>📍 Aalto University · Espoo, Finland</span><span>📅 7–10 June 2027</span></div>
+    <a class="btn" href="{{ '/programme/' | relative_url }}">Explore the programme <span aria-hidden="true">↗</span></a>
+  </div><div class="grid-art" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div></div></section>
+{% else %}
+  <section class="page-hero"><div class="wrap"><p class="eyebrow">TAROT 2027 · 7–10 JUNE · ESPOO</p><h1>{{ page.title | escape }}</h1>{% if page.subtitle %}<p>{{ page.subtitle | escape }}</p>{% endif %}</div></section>
+{% endif %}
+<section class="section {% if page.soft %}soft{% endif %}"><div class="wrap prose">
+{{ content }}
+</div></section>
+</main>
+<footer><div class="wrap foot"><span>TAROT Summer School 2027</span><span>7–10 June 2027 · Aalto University, Espoo · <a href="https://tarot26.github.io/">2026 edition</a></span></div></footer>
+<script src="{{ '/assets/script.js' | relative_url }}" defer></script>
+</body></html>

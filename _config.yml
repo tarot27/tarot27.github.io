@@ -1,0 +1,9 @@
+title: "TAROT Summer School 2027"
+description: "TAROT Summer School, 7–10 June 2027, Aalto University, Espoo, Finland"
+url: "https://tarot27.github.io"
+baseurl: ""
+markdown: kramdown
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
