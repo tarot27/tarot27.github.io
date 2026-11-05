@@ -4,6 +4,7 @@ title: Past editions
 permalink: /past-editions/
 custom_hero: true
 ---
+
 <!-- Historical records and links adapted from the TAROT 2026 Past Editions page. -->
 <section class="past-hero" aria-labelledby="past-title">
   <p class="past-eyebrow">TAROT legacy</p>
