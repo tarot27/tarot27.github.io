@@ -5,6 +5,57 @@ permalink: /past-editions/
 custom_hero: true
 ---
 
+<style>
+.past-hero {
+  background: linear-gradient(135deg, #111827, #374151);
+  color: white;
+  padding: 55px;
+  border-radius: 25px;
+  margin-bottom: 45px;
+}
+.past-hero h1,
+.past-hero p {
+  color: white !important;
+}
+.past-hero h1 {
+  font-size: 55px;
+}
+.roadmap-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+.editions-track {
+  display: grid;
+  gap: 16px;
+  border-left: 4px solid #38bdf8;
+  padding-left: 28px;
+}
+.editions-track a {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 20px 25px;
+  border: 1px solid #dce5ed;
+  border-radius: 15px;
+  background: #f8fafc;
+  text-decoration: none !important;
+  color: #14263f !important;
+}
+.editions-track a strong {
+  font-size: 19px;
+}
+.editions-track a span {
+  color: #526174;
+}
+@media (max-width: 650px) {
+  .past-hero { padding: 28px; }
+  .past-hero h1 { font-size: 38px; }
+  .roadmap-heading { display: block; }
+}
+</style>
+
 <!-- Historical records and links adapted from the TAROT 2026 Past Editions page. -->
 <section class="past-hero" aria-labelledby="past-title">
   <p class="past-eyebrow">TAROT legacy</p>
