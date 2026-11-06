@@ -61,3 +61,21 @@ nav a[aria-current="page"]{color:#2458b0;text-decoration:underline;text-underlin
 @media(max-width:620px){.editions-track a{flex-direction:column!important;align-items:flex-start!important}.editions-track a:after{margin-top:.5rem}}
 @media(max-width:520px){.past-hero{border-radius:22px}}
 @media(prefers-reduced-motion:reduce){.editions-track a{transition:none!important}.editions-track a:hover,.editions-track a:focus-visible{transform:none!important}}
+
+/* Helsinki photograph on the homepage */
+.hero {
+  background:
+    linear-gradient(
+      90deg,
+      #07192d 0%,
+      #07192d 35%,
+      rgba(7,25,45,0.87) 52%,
+      rgba(7,25,45,0.15) 100%
+    ),
+    url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Helsinki_Cathedral_in_the_sunset.jpg/1280px-Helsinki_Cathedral_in_the_sunset.jpg")
+    center right / cover no-repeat;
+}
+
+.hero .grid-art {
+  display: none;
+}
