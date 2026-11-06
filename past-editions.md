@@ -2,7 +2,7 @@
 layout: default
 title: Past editions
 permalink: /past-editions/
-custom_hero: true
+subtitle: Explore the TAROT journey across Europe, from the first edition in Toledo to the 2026 Summer School in Munich.
 ---
 
 <style>
@@ -57,11 +57,6 @@ custom_hero: true
 </style>
 
 <!-- Historical records and links adapted from the TAROT 2026 Past Editions page. -->
-<section class="past-hero" aria-labelledby="past-title">
-  <p class="past-eyebrow">TAROT legacy</p>
-  <h1 id="past-title">Past Editions</h1>
-  <p class="past-lede">Explore the TAROT journey across Europe, from the first edition in Toledo to the 2026 Summer School in Munich.</p>
-</section>
 <div class="roadmap-heading">
   <div>
     <p class="past-eyebrow">2006 → 2026</p>
