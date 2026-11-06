@@ -28,3 +28,5 @@ The **TAROT Summer School 2027** will take place from **7 to 10 June 2027** at *
   <a class="home-card" href="{{ '/venue/' | relative_url }}"><strong>Venue</strong><span>Aalto University, Espoo, Finland →</span></a>
   <a class="home-card" href="{{ '/social-events/' | relative_url }}"><strong>Social events</strong><span>Tours and dinner on 9 June →</span></a>
 </div>
+
+<small>Homepage photograph: <a href="https://commons.wikimedia.org/wiki/File:Helsinki_Cathedral_in_the_sunset.jpg">Debarshi Ray / Wikimedia Commons</a>, CC BY-SA 2.0. Cropped and overlaid with a gradient.</small>
